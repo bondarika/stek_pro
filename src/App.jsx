@@ -10,10 +10,15 @@ export default function App() {
         <Mobile />
       ) : (
         <>
-          <Header />
-          <div className="lines"></div>
-          <Animation />
-          <div className="video"><img src={video} alt="video" /></div>
+          <div className="page-layout">
+            <Header />
+            {/* <div className="lines"> */}
+            <Animation />
+            <div className="video-container">
+              <img src={video} alt="video" />
+            </div>
+            {/* </div> */}
+          </div>
         </>
       )}
     </div>

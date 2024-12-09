@@ -1,16 +1,16 @@
 ﻿.header {
   width: 100%;
   height: 80px;
-  display: grid;
-  grid-template-columns: 3fr 4.5fr 2.6fr;
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   font-family: "Neutral Face";
   font-size: 12px;
-  border-bottom: 1px solid #696969;
   &__logo {
     display: flex;
     gap: 8px;
-    justify-self: end;
     &-text {
       font-size: 14px;
       font-family: "Chava";
@@ -18,12 +18,11 @@
   }
   &__nav {
     display: flex;
-    justify-self: center;
     gap: 32px;
   }
+
   &__lang {
     display: flex;
     gap: 5px;
-    justify-self: start;
   }
 }

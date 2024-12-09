@@ -1,7 +1,7 @@
 ﻿import { logo } from "../constants/images";
 const Header = () => {
   return (
-    <div className="container">
+    // <div className="container">
       <header className="header">
         <div className="header__logo">
           <img src={logo} alt="logo" />
@@ -19,7 +19,7 @@ const Header = () => {
           <p>EN</p>
         </div>
       </header>
-    </div>
+    // </div>
   );
 };
 
