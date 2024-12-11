@@ -1,28 +1,30 @@
 ﻿.header {
-  width: 100%;
-  height: 80px;
-  grid-column: 2;
-  grid-row: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Neutral Face";
-  font-size: 12px;
-  &__logo {
+    height: 80px;
+    min-width: 916px;
+    grid-column: 2;
+    grid-row: 1;
     display: flex;
-    gap: 8px;
-    &-text {
-      font-size: 14px;
-      font-family: "Chava";
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Neutral Face";
+    font-size: 12px;
+    &__logo {
+      display: flex;
+      grid-column: 2;
+      gap: 8px;
+      &-text {
+        font-size: 14px;
+        font-family: "Chava";
+      }
+    }
+    &__nav {
+      display: flex;
+      gap: 32px;
+    }
+
+    &__lang {
+      display: flex;
+      gap: 5px;
     }
   }
-  &__nav {
-    display: flex;
-    gap: 32px;
-  }
 
-  &__lang {
-    display: flex;
-    gap: 5px;
-  }
-}

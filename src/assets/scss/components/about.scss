@@ -1,1 +1,13 @@
-﻿
+﻿.about {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 40px;
+    font-family: "Neutral Face Bold";
+    color: #FFFBFF;
+    -webkit-text-stroke: 1.2px #000000;
+  }
+}

@@ -1,6 +1,5 @@
 import useDeviceDetect from "./hooks/useDeviceDetect";
-import { Header, Mobile, Animation } from "./components";
-import { video } from "./constants/images";
+import { Header, Mobile, Animation, Video, About } from "./components";
 
 export default function App() {
   const { width } = useDeviceDetect();
@@ -12,12 +11,9 @@ export default function App() {
         <>
           <div className="page-layout">
             <Header />
-            {/* <div className="lines"> */}
             <Animation />
-            <div className="video-container">
-              <img src={video} alt="video" />
-            </div>
-            {/* </div> */}
+            <Video />
+            <About />
           </div>
         </>
       )}
