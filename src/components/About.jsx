@@ -1,13 +1,14 @@
-﻿import Slider from "./Swiper";
+﻿import React from "react";
+import Slider from "./Slider";
 const About = () => {
   return (
     <>
-      <div className="container">
+      <div className="container" style={{ borderBottom: "none" }}>
         <div className="about">
           <p>О ПРОЕКТЕ</p>
-          <Slider />
         </div>
       </div>
+      <Slider />
     </>
   );
 };

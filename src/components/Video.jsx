@@ -7,7 +7,12 @@ export default class Video extends Component {
         <div className="container">
           <div className="video">
             <ReactPlayer
-              className="react-player"
+              width="100%"
+              height="auto"
+              playing={true}
+              loop={true}
+              volume={null}
+              muted={true}
               url="videos/video.mp4"
               controls={true}
             />
