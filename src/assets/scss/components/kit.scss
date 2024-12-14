@@ -31,3 +31,18 @@
     }
   }
 }
+
+.package {
+  &__header {
+    align-self: flex-start;
+    margin: 40px 0px 20px 0px;
+    font-family: "Coolvetica";
+    font-size: 24px;
+  }
+  &__img {
+    width: 100%;
+    min-width: 175.2px;
+    border-radius: 8px;
+    border: 1px solid #696969;
+  }
+}
