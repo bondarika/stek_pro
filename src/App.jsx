@@ -1,5 +1,6 @@
 import useDeviceDetect from "./hooks/useDeviceDetect";
-import { Header, Mobile, Animation, Video, About} from "./components";
+import { Header, Mobile, Animation, Video, About, Kit } from "./components";
+
 
 export default function App() {
   const { width } = useDeviceDetect();
@@ -14,6 +15,7 @@ export default function App() {
             <Animation />
             <Video />
             <About />
+            <Kit />
           </div>
         </>
       )}
