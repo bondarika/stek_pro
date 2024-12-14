@@ -12,7 +12,10 @@ const NextButton = ({ swiperRef }) => {
       style={{
         backgroundColor: "transparent",
         border: "none",
-        marginLeft: "20px",
+        padding: "0px 0px 0px 20px",
+        width: "fit-content",
+        height: "fit-content",
+        alignSelf: "center",
       }}
       onClick={handleNextSlide}
     >

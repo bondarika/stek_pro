@@ -12,7 +12,11 @@ const PrevButton = ({ swiperRef }) => {
       style={{
         backgroundColor: "transparent",
         border: "none",
-        marginRight: "20px",
+        padding: "0px 20px 0px 0px",
+        width: "fit-content",
+        height: "fit-content",
+        alignSelf: "center",
+        justifySelf:"flex-end"
       }}
       onClick={handlePrevSlide}
     >
