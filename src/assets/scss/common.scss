@@ -24,19 +24,18 @@ body {
 .swiper {
   display: flex;
   width: 100%;
+  // border-left: 1px solid #696969;
   grid-column: 2;
   min-width: 916px;
   border-radius: 8px;
   &-slide {
     display: flex;
+    border: 1px solid #696969;
+    border-radius: 8px;
+    // &-active {
+    //   border-left: none;
+    // }
   }
-}
-
-.about__img {
-  width: 100%;
-  min-width: 454px;
-  border-radius: 8px;
-  border: 1px solid #696969;
 }
 
 .line-right {
