@@ -1,9 +1,9 @@
 ﻿.about {
+  grid-column: 2;
+
   &__header {
     grid-column: 2;
-    grid-row: 4;
-    display: flex;
-    justify-content: center;
+
     p {
       font-size: 40px;
       font-family: "Neutral Face Bold";
@@ -16,7 +16,7 @@
   &__text {
     width: 100%;
     grid-column: 2;
-    grid-row: 6;
+
     &-repka {
       margin: 40px 0px;
       display: flex;

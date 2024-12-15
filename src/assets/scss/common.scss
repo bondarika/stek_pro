@@ -18,9 +18,11 @@ body {
   grid-column: 1 / span 3;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .swiper {
+      display: flex;
   width: 100%;
   grid-column: 2;
   min-width: 916px;
