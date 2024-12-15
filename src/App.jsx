@@ -12,6 +12,7 @@ export default function App() {
           <div className="page-layout">
             <Header />
             <div style={{ width: "100%", position: "relative" }}>
+              <div className="line-left"></div>
               <Animation />
               <Video />
               <AboutSlider />
