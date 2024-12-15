@@ -1,0 +1,40 @@
+﻿.team {
+  grid-column: 2;
+  grid-row: 9;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 916px;
+  &__header {
+    font-size: 40px;
+    font-family: "Neutral Face Bold";
+    color: #fffbff;
+    -webkit-text-stroke: 1.2px #000000;
+    margin: 60px 0px 40px 0px;
+  }
+  &__block {
+    height: 200px;
+    width: 602px;
+    font-family: "Coolvetica";
+    font-size: 24px;
+    border: 1px solid #696969;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        margin: 0px;
+    }
+    img {
+      height: 200px;
+      width: 194px;
+    }
+    &-name {
+      color: #1a1a1a;
+    }
+    &-role {
+      color: #1cbdaf;
+    }
+  }
+}

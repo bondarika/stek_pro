@@ -1,5 +1,5 @@
 import useDeviceDetect from "./hooks/useDeviceDetect";
-import { Header, Mobile, Animation, Video, AboutSlider, Kit, AboutText } from "./components";
+import { Header, Mobile, Animation, Video, AboutSlider, Kit, AboutText, Team } from "./components";
 
 export default function App() {
   const { width } = useDeviceDetect();
@@ -17,6 +17,7 @@ export default function App() {
               <AboutSlider />
               <AboutText />
               <Kit />
+              <Team />
             </div>
           </div>
         </>
