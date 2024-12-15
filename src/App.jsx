@@ -1,7 +1,6 @@
 import useDeviceDetect from "./hooks/useDeviceDetect";
 import { Header, Mobile, Animation, Video, About, Kit } from "./components";
 
-
 export default function App() {
   const { width } = useDeviceDetect();
   return (
@@ -12,10 +11,12 @@ export default function App() {
         <>
           <div className="page-layout">
             <Header />
-            <Animation />
-            <Video />
-            <About />
-            <Kit />
+            <div style={{ width: "100%", position: "relative" }}>
+              <Animation />
+              <Video />
+              <About />
+              <Kit />
+            </div>
           </div>
         </>
       )}

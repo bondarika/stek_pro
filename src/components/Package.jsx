@@ -9,47 +9,49 @@ const Package = () => {
   const swiperRef = useRef();
   return (
     <>
-      <PrevButton swiperRef={swiperRef} />
+      <div className="container" style={{ borderBottom: "none" }}>
+        <PrevButton swiperRef={swiperRef} />
 
-      <Swiper
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        slidesPerView={5}
-        spaceBetween={10}
-        loop={true}
-      >
-        <SwiperSlide>
-          <img src={k1} alt="k1" className="package__img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={k2} alt="k2" className="package__img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={k3} alt="k3" className="package__img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={k4} alt="k4" className="package__img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={k5} alt="k5" className="package__img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={k6} alt="k6" className="package__img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={k7} alt="k7" className="package__img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={k8} alt="k8" className="package__img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={k9} alt="k9" className="package__img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={k10} alt="k10" className="package__img" />
-        </SwiperSlide>
-      </Swiper>
+        <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          slidesPerView={5}
+          spaceBetween={10}
+          loop={true}
+        >
+          <SwiperSlide>
+            <img src={k1} alt="k1" className="package__img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={k2} alt="k2" className="package__img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={k3} alt="k3" className="package__img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={k4} alt="k4" className="package__img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={k5} alt="k5" className="package__img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={k6} alt="k6" className="package__img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={k7} alt="k7" className="package__img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={k8} alt="k8" className="package__img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={k9} alt="k9" className="package__img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={k10} alt="k10" className="package__img" />
+          </SwiperSlide>
+        </Swiper>
 
-      <NextButton swiperRef={swiperRef} />
+        <NextButton swiperRef={swiperRef} />
+      </div>
     </>
   );
 };
