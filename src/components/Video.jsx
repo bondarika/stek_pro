@@ -15,6 +15,8 @@ export default class Video extends Component {
               muted={true}
               url="videos/video.mp4"
               controls={true}
+              style={{ justifyContent: "center", display: "flex" }}
+              
             />
           </div>
         </div>
