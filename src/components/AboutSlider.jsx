@@ -11,6 +11,7 @@ const AboutSlider = () => {
     <>
       <div className="container" style={{ borderBottom: "none" }}>
         <div className="about">
+          <div className="line-left"></div>
           <div className="about-slider__header">
             <p>О ПРОЕКТЕ</p>
           </div>
@@ -43,6 +44,7 @@ const AboutSlider = () => {
             </div>
             <NextButton swiperRef={swiperRef} />
           </div>
+          <div className="line-right"></div>
         </div>
       </div>
     </>

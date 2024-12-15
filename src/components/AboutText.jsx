@@ -4,6 +4,7 @@ const AboutText = () => {
     <>
       <div className="container">
         <div className="about__text">
+          <div className="line-left"></div>
           <div className="about__text-block">
             <p>
               СТЕК_ПРО — это инновационная IT-платформа для создания
@@ -65,6 +66,7 @@ const AboutText = () => {
 
             <img src={vk} alt="vk" style={{ marginRight: "20px" }} />
           </a>
+          <div className="line-right"></div>
         </div>
       </div>
     </>

@@ -9,8 +9,9 @@ const Kit = () => {
   const swiperRef = useRef();
   return (
     <>
-      <div className="container" style={{ borderBottom: "none" }}>
+      <div className="container" style={{ borderBottom: "none"}}>
         <div className="kit">
+          <div className="line-left"></div>
           <p className="kit__header">НАБОР</p>
           <div className="kit__main">
             <p>
@@ -34,7 +35,7 @@ const Kit = () => {
             }}
           >
             <PrevButton swiperRef={swiperRef} />
-            <div style={{ display: "grid", width: "100%" }}>
+            <div style={{ display: "grid", width: "100%",  }}>
               <Swiper
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 slidesPerView={5}
@@ -75,9 +76,10 @@ const Kit = () => {
             </div>
             <NextButton swiperRef={swiperRef} />
           </div>
+          <div style={{height: "60px"}}></div>
+          <div className="line-right"></div>
         </div>
       </div>
-      <div className="container" style={{ marginTop: "60px" }}></div>
     </>
   );
 };

@@ -17,7 +17,6 @@ body {
   border-bottom: 1px solid #696969;
   grid-column: 1 / span 3;
   width: 100%;
-  overflow: hidden;
   position: relative;
 }
 
@@ -39,7 +38,7 @@ body {
 
 .line-right {
   position: absolute;
-  right: 18.385%;
+  right: -102px;
   height: 100%;
   width: 1px;
   background-color: #696969;
@@ -47,7 +46,7 @@ body {
 
 .line-left {
   position: absolute;
-  left: 18.385%;
+  left: -102px;
   height: 100%;
   width: 1px;
   background-color: #696969;

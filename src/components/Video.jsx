@@ -6,6 +6,7 @@ export default class Video extends Component {
       <>
         <div className="container">
           <div className="video">
+            <div className="line-left"></div>
             <ReactPlayer
               width="100%"
               height="auto"
@@ -16,8 +17,8 @@ export default class Video extends Component {
               url="videos/video.mp4"
               controls={true}
               style={{ justifyContent: "center", display: "flex" }}
-              
             />
+            <div className="line-right"></div>
           </div>
         </div>
       </>
