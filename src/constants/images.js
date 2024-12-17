@@ -22,6 +22,9 @@ import k8 from "@public/images/k8.png";
 import k9 from "@public/images/k9.png";
 import k10 from "@public/images/k10.png";
 import gosha from "@public/images/gosha.png";
+import varya from "@public/images/varya.png";
+import artem from "@public/images/artem.png";
+import leonid from "@public/images/leonid.png";
 
 export {
   logo,
@@ -48,4 +51,7 @@ export {
   k9,
   k10,
   gosha,
+  varya, 
+  artem,
+  leonid
 };
