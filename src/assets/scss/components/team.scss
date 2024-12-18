@@ -18,7 +18,9 @@
     grid-column: 1 / span 3;
   }
   &__block {
+    background-color: #fffbff;
     position: relative;
+    z-index: 10;
     height: 200px;
     width: 602px;
     font-family: "Coolvetica";
@@ -30,13 +32,23 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    &-line {
+    &-line-1 {
       width: 1px;
       background-color: #696969;
       grid-row: 1;
       grid-column: 3/5;
       height: 140px;
     }
+    &-line-2 {
+      position: absolute;
+      width: 1px;
+      background-color: #696969;
+      bottom: 0px;
+      right: 50%;
+      height: 780px;
+      z-index: -10;
+    }
+
     &:first-child {
       grid-column: 1 / 3;
     }
