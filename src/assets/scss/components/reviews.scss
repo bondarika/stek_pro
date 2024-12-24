@@ -1,0 +1,47 @@
+﻿.reviews {
+  grid-column: 2;
+  grid-row: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 916px;
+  &__header {
+    font-size: 40px;
+    font-family: "Neutral Face Bold";
+    color: #fffbff;
+    -webkit-text-stroke: 1.2px #000000;
+    margin: 60px 0px 40px 0px;
+  }
+  &__review {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #696969;
+    border-radius: 4px;
+    padding: 20px;
+    p {
+        margin: 0;
+    }
+  }
+  &__name {
+    font-family: 'Coolvetica';
+    font-size: 24px;
+    color: #1a1a1a;
+  }
+  &__role {
+    font-family: 'Coolvetica';
+    font-size: 18px;
+    color: #696969;
+  }
+  &__text {
+    font-family: 'SF Pro Display Semibold';
+    font-size: 16px;
+    color: #1a1a1a;
+  }
+}
+
+.swiper {
+    border-radius: 4px;
+}
