@@ -7,3 +7,4 @@ export {default as Kit} from "./Kit";
 export {default as AboutText} from "./AboutText";
 export {default as Team} from "./Team";
 export {default as Reviews} from "./Reviews";
+export {default as Partners} from "./Partners";

@@ -96,9 +96,10 @@ const Reviews = () => {
               </SwiperSlide>
             </Swiper>
           </div>
+
           <NextButton swiperRef={swiperRef} />
         </div>
-
+        <div style={{ height: "60px" }}></div>
         <div className="line-right"></div>
       </div>
     </div>

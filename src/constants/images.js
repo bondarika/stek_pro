@@ -25,6 +25,11 @@ import gosha from "@public/images/gosha.png";
 import varya from "@public/images/varya.png";
 import artem from "@public/images/artem.png";
 import leonid from "@public/images/leonid.png";
+import repka_partner from "@public/images/repka_partner.svg";
+import trim from "@public/images/trim.svg";
+import fractalclub from "@public/images/fractalclub.png";
+import sut from "@public/images/sut.svg";
+import math123 from "@public/images/math123.png";
 
 export {
   logo,
@@ -51,7 +56,12 @@ export {
   k9,
   k10,
   gosha,
-  varya, 
+  varya,
   artem,
-  leonid
+  leonid,
+  repka_partner,
+  trim,
+  fractalclub,
+  sut,
+  math123,
 };
