@@ -13,9 +13,11 @@ const Partners = () => {
         <p className="partners__header">НАШИ ПАРТНЕРЫ</p>
         <div
           style={{
+            width: "100%",
             display: "flex",
             flexDirection: "row",
-            gap: "16px",
+            gap: "10px",
+            minWidth: "916px",
           }}
         >
           <a href="https://repka-pi.ru/" className="partners__box">
