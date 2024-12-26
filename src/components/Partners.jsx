@@ -8,7 +8,7 @@
 const Partners = () => {
   return (
     <div className="container">
-      <div className="partners">
+      <div className="partners" id="partners">
         <div className="line-left"></div>
         <p className="partners__header">НАШИ ПАРТНЕРЫ</p>
         <div
