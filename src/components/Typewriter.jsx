@@ -1,42 +1,63 @@
-﻿import React, { useState, useEffect } from "react";
+﻿import React, { useEffect, useState } from "react";
 
-const Typewriter = ({ toRotate, period }) => {
-  const [text, setText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [loopNum, setLoopNum] = useState(0);
-  const [delta, setDelta] = useState(200);
+const Typewriter = ({
+  texts,
+  period = 1500,
+  typingSpeed = 166,
+  deleteSpeed = 28,
+}) => {
+  const [text, setText] = useState(""); // Текущий текст
+  const [isDeleting, setIsDeleting] = useState(false); // Режим удаления
+  const [loopNum, setLoopNum] = useState(0); // Индекс текущей строки
+  const [currentSpeed, setCurrentSpeed] = useState(false); // Текущая скорость
 
   useEffect(() => {
-    const handleTick = () => {
-      const i = loopNum % toRotate.length;
-      const fullTxt = toRotate[i];
+    const handleTyping = () => {
+      const i = loopNum % texts.length; // Циклический перебор строк
+      const fullText = texts[i];
 
-      setText((prevText) =>
-        isDeleting
-          ? fullTxt.substring(0, prevText.length - 1)
-          : fullTxt.substring(0, prevText.length + 1)
-      );
-
-      if (!isDeleting && text === fullTxt) {
-        setIsDeleting(true);
-        setDelta(period);
-      } else if (isDeleting && text === "") {
-        setIsDeleting(false);
-        setLoopNum(loopNum + 1);
-        setDelta(500);
+      if (isDeleting) {
+        // Удаление текста
+        setText((prev) => fullText.substring(0, prev.length - 1));
+        setCurrentSpeed(deleteSpeed); // Используем скорость удаления
       } else {
-        setDelta(200 - Math.random() * 100);
+        // Печать текста
+        setText((prev) => fullText.substring(0, prev.length + 1));
+        setCurrentSpeed(typingSpeed); // Используем скорость печати
+      }
+
+      if (!isDeleting && text === fullText) {
+        // Когда текст напечатан полностью
+        setTimeout(() => setIsDeleting(true), period);
+      } else if (isDeleting && text === "") {
+        // Когда текст полностью стерт
+        setIsDeleting(false);
+        setLoopNum((prev) => prev + 1);
       }
     };
 
-    const timer = setTimeout(handleTick, delta);
+    const timer = setTimeout(handleTyping, currentSpeed);
 
-    return () => clearTimeout(timer);
-  }, [text, isDeleting, delta, loopNum, toRotate, period]);
+    return () => clearTimeout(timer); // Очистка таймера при обновлении
+  }, [
+    text,
+    isDeleting,
+    loopNum,
+    texts,
+    currentSpeed,
+    period,
+    typingSpeed,
+    deleteSpeed,
+  ]);
 
   return (
     <span className="typewrite">
-      <span className="wrap">{text}</span>
+      <span className="wrap">
+        {text}
+        <span>
+          |
+        </span>
+      </span>
     </span>
   );
 };

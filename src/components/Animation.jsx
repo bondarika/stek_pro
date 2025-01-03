@@ -1,4 +1,5 @@
 ﻿import { child, h1 } from "../constants/images";
+import Typewriter from "./Typewriter";
 
 const Animation = () => {
   return (
@@ -6,10 +7,19 @@ const Animation = () => {
       <div className="container">
         <div className="animation">
           <div className="line-left"></div>
-          <div className="animation__img-1">
-            <img src={h1} alt="h1" />
+          <div className="animation__typewriter">
+            <div>
+              <p>стек_про —</p>
+            </div>
+            <Typewriter
+              texts={[
+                "ваш путь в мир IoT",
+                "инновационный набор",
+                "онлайн курс на Stepik",
+              ]}
+            />
           </div>
-          <div className="animation__img-2">
+          <div className="animation__img">
             <img src={child} alt="child" />
           </div>
           <div className="line-right"></div>
