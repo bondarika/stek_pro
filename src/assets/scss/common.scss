@@ -1,14 +1,11 @@
 ﻿* {
   box-sizing: border-box !important;
 }
-html {
-  width: 100%;
-}
+
 body {
   background-color: #fffbff;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 p {
@@ -46,6 +43,9 @@ p {
   height: 100%;
   width: 1px;
   background-color: #696969;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .line-left {
@@ -54,4 +54,7 @@ p {
   height: 100%;
   width: 1px;
   background-color: #696969;
+    @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }

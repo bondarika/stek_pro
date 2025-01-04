@@ -23,13 +23,13 @@ export default function App() {
   const period = 2000;
   return (
     <div>
-      {width < 1080 ? (
+      {width < 1024 ? (
         <Mobile />
       ) : (
         <>
           <div className="page-layout">
             <Header />
-            <div style={{ width: "100%", position: "relative" }}>
+            <div style={{ position: "relative" }}>
               <Animation />
               <Video />
               <AboutSlider />

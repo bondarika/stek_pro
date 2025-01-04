@@ -1,11 +1,14 @@
 ﻿.mobile {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    &__text {
-        font-size: 14px;
-        font-family: "Chava";
-    }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 16px;
+  gap: 16px;
+  &__text {
+    font-size: 14px;
+    font-family: "Chava";
+    text-align: center;
+  }
 }
