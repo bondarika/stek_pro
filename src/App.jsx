@@ -38,13 +38,6 @@ export default function App() {
               <Team />
               <Reviews />
               <Partners />
-              <Typewriter
-                texts={[
-                  "ваш путь в мир IoT",
-                  "инновационный набор",
-                  "онлайн курс на Stepik",
-                ]}
-              />
             </div>
           </div>
         </>
