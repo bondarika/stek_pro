@@ -70,7 +70,6 @@ const Header = () => {
           </div>
           <div className="header__lang">
             <p>RU</p>
-            <p>EN</p>
           </div>
         </header>
       </div>

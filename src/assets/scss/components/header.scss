@@ -16,22 +16,43 @@
     &-text {
       font-size: 14px;
       font-family: "Chava";
+      color: #4B4B4B;
     }
   }
   &__nav {
     display: flex;
     gap: 32px;
-
     button {
       margin: 0;
-      text-decoration: none;
+      position: relative;
       color: black;
       align-self: center;
       border: none;
       background-color: transparent;
       font-size: 12px;
-      font-family: 'Neutral Face';
+      font-family: "Neutral Face";
       padding: 0;
+    }
+    button:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      border-radius: 1px;
+      background-color: #18272f;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+    button:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+    button:active {
+      background-color: #DAF3F3;
+      cursor: pointer;
     }
   }
 

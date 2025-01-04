@@ -1,4 +1,4 @@
-﻿import { gosha, varya, artem, leonid } from "../constants/images";
+﻿import { gosha, varya, artem, leonid, vlad } from "../constants/images";
 const Team = () => {
   return (
     <div className="container">
@@ -29,6 +29,13 @@ const Team = () => {
             <p className="team__block-role">технический специалист</p>
           </div>
           <img src={artem} alt="artem" />
+        </div>
+        <div className="team__block">
+          <img src={vlad} alt="vlad" />
+          <div className="team__block-info">
+            <p className="team__block-name">Владислав Вахтель</p>
+            <p className="team__block-role">тестировщик-методист</p>
+          </div>
         </div>
         <div className="team__block" style={{ marginBottom: "60px" }}>
           <img src={leonid} alt="leonid" />
