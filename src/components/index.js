@@ -8,4 +8,6 @@ export {default as AboutText} from "./AboutText";
 export {default as Team} from "./Team";
 export {default as Reviews} from "./Reviews";
 export {default as Partners} from "./Partners";
-export {default as Typewriter} from "./Typewriter";
+export {default as NextButton} from "./NextButton";
+export {default as PrevButton} from "./PrevButton";
+export {default as Footer} from "./Footer";

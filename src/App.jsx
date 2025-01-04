@@ -10,7 +10,7 @@ import {
   Team,
   Reviews,
   Partners,
-  Typewriter,
+  Footer,
 } from "./components";
 
 export default function App() {
@@ -38,6 +38,7 @@ export default function App() {
               <Team />
               <Reviews />
               <Partners />
+              <Footer />
             </div>
           </div>
         </>
