@@ -1,4 +1,4 @@
-﻿import { child, h1 } from "../constants/images";
+﻿import { child } from "../constants/images";
 import Typewriter from "./Typewriter";
 
 const Animation = () => {
