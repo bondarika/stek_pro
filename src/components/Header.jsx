@@ -5,7 +5,10 @@ const Header = () => {
   const menuRef = useRef();
   return (
     <>
-      <div className="container">
+      <div
+        className="container"
+        style={{ position: "-webkit-sticky", backgroundColor: "#fffbff", zIndex: "100", top: "0" }}
+      >
         <header className="header">
           <div className="header__logo">
             <img src={logo} alt="logo" />

@@ -20,7 +20,6 @@ export default function App() {
     "инновационный набор",
     "онлайн курс на Stepik",
   ];
-  const period = 2000;
   return (
     <div>
       {width < 1024 ? (
