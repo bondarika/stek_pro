@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="line-left"></div>
         <div className="footer__logo">
           <img src={stek_pro} alt="СТЕК_ПРО" />
-          <img src={year} alt="2024" />
+          <img src={year} alt="2025" />
         </div>
         <div>
           <p>наши соцсети</p>

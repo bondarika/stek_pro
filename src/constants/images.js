@@ -30,7 +30,7 @@ import fractalclub from "@public/images/fractalclub.png";
 import sut from "@public/images/sut.svg";
 import math123 from "@public/images/math123.png";
 import stek_pro from "@public/images/stek_pro.svg";
-import year from "@public/images/2024.svg";
+import year from "@public/images/year.svg";
 import vlad from "@public/images/vlad.png";
 
 export {
