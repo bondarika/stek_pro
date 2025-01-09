@@ -9,7 +9,8 @@ const AboutSlider = () => {
   return (
     <>
       <div className="container" style={{ borderBottom: "none" }}>
-        <div className="about" id="about">
+        <div className="target-wrapper" id="about"></div>
+        <div className="about">
           <div className="line-left"></div>
           <div className="about-slider__header">
             <p>О ПРОЕКТЕ</p>

@@ -9,6 +9,8 @@
   font-family: "Neutral Face";
   font-size: 12px;
   &__logo {
+    background-color: transparent;
+    border: none;
     display: flex;
     grid-column: 2;
     align-items: center;
@@ -16,7 +18,7 @@
     &-text {
       font-size: 14px;
       font-family: "Chava";
-      color: #4B4B4B;
+      color: #4b4b4b;
     }
   }
   &__nav {
@@ -51,13 +53,15 @@
       transform: scaleX(1);
     }
     button:active {
-      background-color: #DAF3F3;
-      cursor: pointer;
+      background-color: #daf3f3;
     }
   }
 
   &__lang {
     display: flex;
     gap: 5px;
+  }
+  button:active {
+    cursor: pointer;
   }
 }

@@ -8,7 +8,8 @@ const Reviews = () => {
   const swiperRef = useRef();
   return (
     <div className="container">
-      <div className="reviews" id="reviews">
+      <div className="target-wrapper" id="reviews"></div>
+      <div className="reviews">
         <div className="line-left"></div>
         <p className="reviews__header">ОТЗЫВЫ</p>
         <div style={{ position: "relative" }}>

@@ -10,7 +10,8 @@ const Kit = () => {
   return (
     <>
       <div className="container">
-        <div className="kit" id="kit">
+        <div className="target-wrapper" id="kit"></div>
+        <div className="kit">
           <div className="line-left"></div>
           <p className="kit__header">НАБОР</p>
           <div className="kit__main">

@@ -2,7 +2,8 @@
 const Team = () => {
   return (
     <div className="container">
-      <div className="team" id="team">
+      <div className="target-wrapper" id="team"></div>
+      <div className="team">
         <div className="line-left"></div>
         <p className="team__header">КОМАНДА</p>
         <div className="team__block-line-1"></div>

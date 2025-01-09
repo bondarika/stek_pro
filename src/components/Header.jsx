@@ -7,13 +7,26 @@ const Header = () => {
     <>
       <div
         className="container"
-        style={{ position: "-webkit-sticky", backgroundColor: "#fffbff", zIndex: "100", top: "0" }}
+        style={{
+          position: "-webkit-sticky",
+          backgroundColor: "#fffbff",
+          zIndex: "100",
+          top: "0",
+        }}
       >
         <header className="header">
-          <div className="header__logo">
+          <button
+            className="header__logo"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             <img src={logo} alt="logo" />
             <p className="header__logo-text">СТЕК-ПРО</p>
-          </div>
+          </button>
           <div className="header__nav">
             <button
               ref={menuRef}
