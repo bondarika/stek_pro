@@ -39,11 +39,11 @@ const Team = () => {
           </div>
         </div>
         <div className="team__block" style={{ marginBottom: "60px" }}>
-          <img src={leonid} alt="leonid" />
           <div className="team__block-info">
             <p className="team__block-name">Леонид Стецурин</p>
             <p className="team__block-role">креативный менеджер</p>
           </div>
+          <img src={leonid} alt="leonid" />
         </div>
         <div className="team__block-line-2"></div>
         <div className="line-right"></div>

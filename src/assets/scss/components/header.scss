@@ -15,6 +15,9 @@
     grid-column: 2;
     align-items: center;
     gap: 8px;
+    :hover {
+      cursor: pointer;
+    }
     &-text {
       font-size: 14px;
       font-family: "Chava";

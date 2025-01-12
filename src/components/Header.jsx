@@ -9,6 +9,7 @@ const Header = () => {
         className="container"
         style={{
           position: "-webkit-sticky",
+          position: "sticky",
           backgroundColor: "#fffbff",
           zIndex: "100",
           top: "0",
@@ -25,7 +26,7 @@ const Header = () => {
             }}
           >
             <img src={logo} alt="logo" />
-            <p className="header__logo-text">СТЕК-ПРО</p>
+            <p className="header__logo-text">СТЕК_ПРО</p>
           </button>
           <div className="header__nav">
             <button
