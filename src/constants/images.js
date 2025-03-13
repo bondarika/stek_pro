@@ -11,7 +11,7 @@ import repka from "@/assets/images/repka.png";
 import vk from "@/assets/images/vk.svg";
 import kit from "@/assets/images/kit.png";
 import k1 from "@/assets/images/k1.png";
-import k2 from "@/assetsimages/k2.png";
+import k2 from "@/assets/images/k2.png";
 import k3 from "@/assets/images/k3.png";
 import k4 from "@/assets/images/k4.png";
 import k5 from "@/assets/images/k5.png";
