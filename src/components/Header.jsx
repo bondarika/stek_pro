@@ -86,7 +86,7 @@ const Header = () => {
             </button>
           </div>
           <div className="header__lang">
-            <p>RU</p>
+            <p>ВХОД</p>
           </div>
         </header>
       </div>
